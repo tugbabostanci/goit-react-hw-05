@@ -2,7 +2,7 @@ import { getMovieDetails } from "../../api/tmdbApi";
 import React, { useEffect, useState, Suspense } from "react";
 import { useParams, Link, Outlet, useLocation } from "react-router-dom";
 import css from "./MovieDetailsPage.module.css";
-import BackLink from "./components/BackLink/BackLink";
+import BackLink from "../../components/BackLink/BackLink";
 
 export default function MovieDetailsPage() {
   const { movieId } = useParams();
