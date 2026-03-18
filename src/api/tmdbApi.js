@@ -1,9 +1,10 @@
 import axios from "axios";
 
 const API_URL = "https://api.themoviedb.org/3";
-const API_TOKEN = import.meta.env.VITE_TMDB_TOKEN;
+const API_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMzg5YWY4YzQ2N2Q5ZTA4ZDMzM2UxZDg1NzIzNmUzZiIsIm5iZiI6MTc3Mzg2NTY3NC4wMTYsInN1YiI6IjY5YmIwYWNhNzRiMjNiZDVlNTIxZjEwMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.juDbotnpzUOCENdNAwWKUfMHhMw25mwcP3YILFDO8zY';
 
-// Her istekte gönderilecek olan temel axios ayarları
+
+
 const axiosInstance = axios.create({
   baseURL: API_URL,
   headers: {
